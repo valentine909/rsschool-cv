@@ -4,95 +4,140 @@
     <meta charset="UTF-8">
     <title>CV - Valentine Nazarov</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/lightbulb_icon.svg" />
+    <link href="img/lightbulb_icon.svg" rel="shortcut icon"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <header>
-    <h1 class="cv-name">Valentine Nazarov</h1>
-    <h4 class="cv-position">Junior Front-end Developer</h4>
-    <hr>
-    <section class="info-block">
-        <h2 class="info-sub-title">Contact Info</h2>
-        <ul class="info-block-contacts-list">
-            <li>
-                <strong>Email:</strong>
-                <a href="mailto:valentine_n@tut.by">valentine_n@tut.by</a>
-            </li>
-            <li>
-                <strong>Skype:</strong>
-                <a href="skype:v.nazaroff">v.nazaroff</a>
-            </li>
-        </ul>
-    </section>
+    <div class="photo">
+        <img alt="My photo" class="my-photo" src="/img/photo_placeholder_icon.svg">
+    </div>
+    <div class="cv-title">
+        <h1 class="cv-name">Valentine Nazarov</h1>
+        <h4 class="cv-position">Junior Front-end Developer</h4>
+    </div>
 </header>
+<main>
+    <div class="column-one">
+        <section class="info-block">
+            <h2 class="info-sub-title">Contact Info</h2>
+            <ul class="info-block-contacts-list">
+                <li>
+                    <b>Phone:</b>
+                    <a class="link" href="tel:37544*******">+375 44 *** ** **</a>
+                </li>
+                <li>
+                    <b>Email:</b>
+                    <a class="link" href="mailto:valentine_n@tut.by">valentine_n@tut.by</a>
+                </li>
+                <li>
+                    <b>Skype:</b>
+                    <a class="link" href="skype:v.nazaroff">v.nazaroff</a>
+                </li>
+                <li>
+                    <b>Location:</b>
+                    <a class="link"
+                       href="https://www.google.com/maps/place/Minsk/@53.8843138,27.3131922,10z/">Minsk, Belarus
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-<main class="main-info">
-    <section class="info-block">
-        <h2 class="info-sub-title">About Me</h2>
-        <p>Currently, I'm seeking for an opportunity to change my career.</p>
-    </section>
+        <section class="info-block">
+            <h2 class="info-sub-title">Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Git/GitHUB</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Linux</li>
+            </ul>
+        </section>
+    </div>
 
-    <section class="info-block">
-        <h2 class="info-sub-title">Skills</h2>
-        <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Git/GitHUB</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Linux</li>
-        </ul>
-    </section>
+    <div class="column-two">
+        <section class="info-block">
+            <h2 class="info-sub-title">About Me</h2>
+            <p>Currently, I'm seeking for an opportunity to change my career.</p>
+        </section>
 
-    <section class="info-block">
-        <h2 class="info-sub-title">Code Example</h2>
-        <code class="code">function songDecoder(song) {
-            return song.split(/(WUB)+/).filter(x => !(x == 'WUB' || x == '')).join(' ');
-            }</code>
-        <p>More examples can be found on <a href="https://github.com/valentine909/">GitHUB</a>.</p>
-    </section>
+        <section class="info-block">
+            <h2 class="info-sub-title">Code Example</h2>
+            <pre><code class="code">function songDecoder(song) {
+                return song
+                .split(/(WUB)+/)
+                .filter(x => !(x == 'WUB' || x == ''))
+                .join(' ');
+                }</code></pre>
+            <p>More examples can be found on <a class="link" href="https://github.com/valentine909/">GitHUB</a>.</p>
+        </section>
 
-    <section class="info-block">
-        <h2 class="info-sub-title">Experience</h2>
-        <ul>
-            <li>2014 - ... Lead Chemical Engineer in MED-INTERPLAST</li>
-            <li>2005 - 2014 Senior Researcher in Research Institute for Physical Chemical Problems of the Belarusian
-                State
-                University
-            </li>
-        </ul>
-    </section>
+        <section class="info-block">
+            <h2 class="info-sub-title">Experience</h2>
+            <ul>
+                <li>2014 - ... Lead Chemical Engineer in MED-INTERPLAST</li>
+                <li>2005 - 2014 Senior Researcher in Research Institute for Physical Chemical Problems of the Belarusian
+                    State
+                    University
+                </li>
+            </ul>
+        </section>
 
-    <section class="info-block">
-        <h2 class="info-sub-title">Education</h2>
-        <ul>
-            <li>2002 - 2005 Graduate School of Belarusian State University</li>
-            <li>1997 - 2002 Chemical Department of Belarusian State University</li>
-        </ul>
-    </section>
+        <section class="info-block">
+            <h2 class="info-sub-title">Education</h2>
+            <ul>
+                <li>2002 - 2005 Graduate School of Belarusian State University</li>
+                <li>1997 - 2002 Chemical Department of Belarusian State University</li>
+            </ul>
+        </section>
 
-    <section class="info-block">
-        <h2 class="info-sub-title">Languages</h2>
-        English: <strong>C1</strong> (according to <em>EF SET Quick Check</em>)
-    </section>
+        <section class="info-block">
+            <h2 class="info-sub-title">Languages</h2>
+            English: <strong>C1</strong> (according to <em>EF SET Quick Check</em>)
+        </section>
+    </div>
 </main>
 <footer class="footer">
     <div class="logo">
-        <a href="https://rs.school/js/"><img class="footer-img" src="img/rs_school_js.svg" alt="RS School"></a>
+        <a href="https://rs.school/js/">
+            <img alt="RS School" class="footer-img" src="img/rs_school_js.svg">
+        </a>
     </div>
-    <div class="contacts">
+
+    <nav class="contacts">
         <ul class="contacts-list">
-            <li class="single-contact"><a href="mailto:valentine_n@tut.by"><img class="footer-img" src="img/mail_icon.svg" alt="Email"></a></li>
-            <li class="single-contact"><a href="skype:v.nazaroff"><img class="footer-img" src="img/skype_icon.svg" alt="Skype"></a></li>
-            <li class="single-contact"><a href="https://github.com/valentine909/"><img class="footer-img" src="img/github_icon.svg" alt="GitHUB"></a></li>
+            <li class="single-contact">
+                <a href="mailto:valentine_n@tut.by">
+                    <img alt="Email"
+                         class="footer-img"
+                         src="img/mail_icon.svg">
+                </a>
+            </li>
+            <li class="single-contact">
+                <a href="skype:v.nazaroff">
+                    <img alt="Skype" class="footer-img"
+                         src="img/skype_icon.svg">
+                </a>
+            </li>
+            <li class="single-contact">
+                <a href="https://github.com/valentine909/">
+                    <img alt="GitHUB"
+                         class="footer-img"
+                         src="img/github_icon.svg">
+                </a>
+            </li>
         </ul>
+    </nav>
 
-
-
-    </div>
     <div class="copyright">
         <small>© 2021</small>
     </div>
 </footer>
 </body>
+<script>
+    document.getElementsByTagName("code")[0].style.backgroundColor = "#FBF0F0"
+</script>
 </html>
