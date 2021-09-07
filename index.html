@@ -13,7 +13,7 @@
     <hr>
     <section class="info-block">
         <h2 class="info-sub-title">Contact Info</h2>
-        <ul class="contacts-list">
+        <ul class="info-block-contacts-list">
             <li>
                 <strong>Email:</strong>
                 <a href="mailto:valentine_n@tut.by">valentine_n@tut.by</a>
@@ -46,7 +46,7 @@
 
     <section class="info-block">
         <h2 class="info-sub-title">Code Example</h2>
-        <code>function songDecoder(song) {
+        <code class="code">function songDecoder(song) {
             return song.split(/(WUB)+/).filter(x => !(x == 'WUB' || x == '')).join(' ');
             }</code>
         <p>More examples can be found on <a href="https://github.com/valentine909/">GitHUB</a>.</p>
@@ -78,12 +78,17 @@
 </main>
 <footer class="footer">
     <div class="logo">
-        <a href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="RS School"></a>
+        <a href="https://rs.school/js/"><img class="footer-img" src="img/rs_school_js.svg" alt="RS School"></a>
     </div>
     <div class="contacts">
-        <a href="mailto:valentine_n@tut.by"><img src="img/mail_icon.svg" alt="Email"></a>
-        <a href="skype:v.nazaroff"><img src="img/skype_icon.svg" alt="Skype"></a>
-        <a href="https://github.com/valentine909/"><img src="img/github_icon.svg" alt="GitHUB"></a>
+        <ul class="contacts-list">
+            <li class="single-contact"><a href="mailto:valentine_n@tut.by"><img class="footer-img" src="img/mail_icon.svg" alt="Email"></a></li>
+            <li class="single-contact"><a href="skype:v.nazaroff"><img class="footer-img" src="img/skype_icon.svg" alt="Skype"></a></li>
+            <li class="single-contact"><a href="https://github.com/valentine909/"><img class="footer-img" src="img/github_icon.svg" alt="GitHUB"></a></li>
+        </ul>
+
+
+
     </div>
     <div class="copyright">
         <small>© 2021</small>

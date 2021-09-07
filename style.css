@@ -1,0 +1,42 @@
+body {
+    background-color: #FBF0F0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.info-block {
+    background-color: #DFD3D3;
+    padding: 10px;
+    margin: 10px;
+}
+.code {
+    margin: 25px;
+}
+.footer-img {
+    width: 100%;
+    height: 40px;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+}
+.contacts-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-contact {
+    margin: 0 30px 0 0;
+}
+.footer {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-left: 25px;
+}
+.copyright {
+    margin-right: 25px;
+}
