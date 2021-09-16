@@ -38,6 +38,11 @@ main {
     background-color: #DFD3D3;
     margin: 5px 0 5px 5px;
 }
+.article-paragraph, .paragraph {
+    text-align:justify;
+    text-justify:inter-word;
+    text-indent: 1rem;
+}
 .info-block {
     padding: 5px;
     margin: 5px;
@@ -51,8 +56,11 @@ main {
     text-decoration: none;
     color: #7C7575;
 }
-.code {
-    background-color: #FBF0F0;
+.my-video {
+    display: block;
+    border-style:none;
+    object-fit: cover;
+    margin: 0 auto;
 }
 .footer {
     background-color: #B8B0B0;
@@ -93,8 +101,8 @@ main {
     position: relative;
     z-index: 2;
     left: 1rem;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border: black solid 1px;
     background: #FBF0F0;
     cursor: pointer;
@@ -102,13 +110,9 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-.close-icon {
-    padding: 0;
-    margin: 0;
-    display: none;
+.material-icons {
+    font-size: 48px !important;
 }
-
 .menu {
     position: absolute;
     /*width: 20vh;*/

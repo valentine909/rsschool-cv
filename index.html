@@ -51,7 +51,7 @@
 <main>
     <div class="column-one">
         <section class="info-block">
-            <h2 id="contact-info" class="info-sub-title">Contact Info</h2>
+            <h2 class="info-sub-title" id="contact-info">Contact Info</h2>
             <ul class="info-block-contacts-list">
                 <li>
                     <b>Phone:</b>
@@ -75,7 +75,7 @@
         </section>
 
         <section class="info-block">
-            <h2 id="skills" class="info-sub-title">Skills</h2>
+            <h2 class="info-sub-title" id="skills">Skills</h2>
             <ul>
                 <li>HTML/CSS</li>
                 <li>JavaScript</li>
@@ -89,17 +89,37 @@
 
     <div class="column-two">
         <section class="info-block">
-            <h2 id="about-me" class="info-sub-title">About Me</h2>
-            <p>Currently, I'm seeking for an opportunity to change my career.</p>
+            <h2 class="info-sub-title" id="about-me">About Me</h2>
+            <article>
+                <p class="article-paragraph">I graduated from Belarusian State University, Chemical Department in 2002
+                    and got a Ph.D. in
+                    Chemistry in 2007. I’ve worked for quite a long time as a researcher in the Research Institute for
+                    Physical Chemical Problems.</p>
+                <p class="article-paragraph">Presently I’m a Lead Chemical Engineer in a small Belarusian pharmaceutical
+                    company Med-Interplast,
+                    in the RnD Department. My current job is to develop and validate analytical procedures for quality
+                    control of the new pharmaceutical formulations.</p>
+                <p class="article-paragraph">I became interested in computers sciences several years ago and have some
+                    practice in Python, SQL,
+                    Regex and algorithms. I believe that training at Rolling Scopes School will help me to gain enough
+                    experience to become a Frontend Developer.</p>
+            </article>
         </section>
 
         <section class="info-block">
-            <h2 id="self-presentation" class="info-sub-title">Self-presentation</h2>
-            <video src="#">My video</video>
+            <h2 class="info-sub-title" id="self-presentation">Self-presentation</h2>
+            <div class="video-container">
+                <iframe class="my-video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen frameborder="0"
+                        height="280" src="https://www.youtube.com/embed/xxF5LHRZ0vo"
+                        title="YouTube video player"
+                        width="500"></iframe>
+            </div>
         </section>
 
         <section class="info-block">
-            <h2 id="code-example" class="info-sub-title">Code Example</h2>
+            <h2 class="info-sub-title" id="code-example">Code Example</h2>
             <pre><code class="code">function songDecoder(song) {
                 return song
                 .split(/(WUB)+/)
@@ -110,12 +130,12 @@
         </section>
 
         <section class="info-block">
-            <h2 id="my-projects" class="info-sub-title">My Projects</h2>
+            <h2 class="info-sub-title" id="my-projects">My Projects</h2>
             <img alt="wildlife" src="#">
         </section>
 
         <section class="info-block">
-            <h2 id="experience" class="info-sub-title">Experience</h2>
+            <h2 class="info-sub-title" id="experience">Experience</h2>
             <ul>
                 <li>2014 - ... Lead Chemical Engineer in MED-INTERPLAST</li>
                 <li>2005 - 2014 Senior Researcher in Research Institute for Physical Chemical Problems of the Belarusian
@@ -126,7 +146,7 @@
         </section>
 
         <section class="info-block">
-            <h2 id="education" class="info-sub-title">Education</h2>
+            <h2 class="info-sub-title" id="education">Education</h2>
             <ul>
                 <li>2002 - 2005 Graduate School of Belarusian State University</li>
                 <li>1997 - 2002 Chemical Department of Belarusian State University</li>
@@ -134,8 +154,9 @@
         </section>
 
         <section class="info-block">
-            <h2 id="languages" class="info-sub-title">Languages</h2>
-            English: <strong>C1</strong> (according to <em>EF SET Quick Check</em>)
+            <h2 class="info-sub-title" id="languages">Languages</h2>
+            <p class="paragraph">English: <strong>C1</strong> (according to <em>EF SET Quick Check</em>)</p>
+            <p class="paragraph">Russian: native</p>
         </section>
     </div>
 </main>
@@ -210,5 +231,6 @@
             menuLink.addEventListener("click", toggleMenu)
         }
     )
+    document.getElementsByClassName('close-icon')[0].style.display = 'none'
 </script>
 </html>
