@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Valentine Nazarov</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="img/lightbulb_icon.svg" rel="shortcut icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<body>
+<header>
+
+    <div class="hamburger-menu">
+        <button class="hamburger">
+            <span class="menu-icon material-icons">
+                menu
+            </span>
+            <span class="close-icon material-icons">
+                close
+            </span>
+        </button>
+        <ul class="menu">
+            <li><a class="ham-link" href="#about-me">About Me</a></li>
+            <li><a class="ham-link" href="#self-presentation">Self-presentation</a></li>
+            <li><a class="ham-link" href="#code-example">Code example</a></li>
+            <li><a class="ham-link" href="#my-projects">My Projects</a></li>
+            <li><a class="ham-link" href="#experience">Experience</a></li>
+            <li><a class="ham-link" href="#education">Education</a></li>
+            <li><a class="ham-link" href="#languages">Languages</a></li>
+            <li><a class="ham-link" href="#contact-info">Contact Info</a></li>
+            <li><a class="ham-link" href="#skills">Skills</a></li>
+        </ul>
+    </div>
+
+    <div class="photo">
+        <img alt="My photo" class="my-photo" src="/img/photo_placeholder_icon.svg">
+    </div>
+
+    <div class="cv-title">
+        <h1 class="cv-name">Valentine Nazarov</h1>
+        <h4 class="cv-position">Junior Front-end Developer</h4>
+    </div>
+</header>
+
+
+<main>
+    <aside class="column-one">
+        <section class="info-block">
+            <h2 class="info-sub-title" id="contact-info">Contact Info</h2>
+            <ul class="info-block-contacts-list">
+                <li>
+                    <b>Phone:</b>
+                    <a class="link" href="tel:37544*******">+375 44 *** ** **</a>
+                </li>
+                <li>
+                    <b>Email:</b>
+                    <a class="link" href="mailto:valentine_n@tut.by">valentine_n@tut.by</a>
+                </li>
+                <li>
+                    <b>Skype:</b>
+                    <a class="link" href="skype:v.nazaroff">v.nazaroff</a>
+                </li>
+                <li>
+                    <b>Location:</b>
+                    <a class="link"
+                       href="https://www.google.com/maps/place/Minsk/@53.8843138,27.3131922,10z/">Minsk, Belarus
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="info-block">
+            <h2 class="info-sub-title" id="skills">Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Git/GitHUB</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Linux</li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="column-two">
+        <article class="info-block">
+            <h2 class="info-sub-title" id="about-me">About Me</h2>
+                <p class="article-paragraph">I graduated from Belarusian State University, Chemical Department in 2002
+                    and got a Ph.D. in
+                    Chemistry in 2007. I’ve worked for quite a long time as a researcher in the Research Institute for
+                    Physical Chemical Problems.</p>
+                <p class="article-paragraph">Presently I’m a Lead Chemical Engineer in a small Belarusian pharmaceutical
+                    company Med-Interplast,
+                    in the RnD Department. My current job is to develop and validate analytical procedures for quality
+                    control of the new pharmaceutical formulations.</p>
+                <p class="article-paragraph">I became interested in computers sciences several years ago and have some
+                    practice in Python, SQL,
+                    Regex and algorithms. I believe that training at Rolling Scopes School will help me to gain enough
+                    experience to become a Frontend Developer.</p>
+        </article>
+
+        <section class="info-block">
+            <h2 class="info-sub-title" id="self-presentation">Self-presentation</h2>
+            <div class="video-container">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        class="my-video"
+                        height="280" src="https://www.youtube.com/embed/xxF5LHRZ0vo"
+                        title="YouTube video player"
+                        width="500"></iframe>
+            </div>
+        </section>
+
+        <section class="info-block">
+            <h2 class="info-sub-title" id="code-example">Code Example</h2>
+            <pre><code class="code">function songDecoder(song) {
+                return song
+                .split(/(WUB)+/)
+                .filter(x => !(x == 'WUB' || x == ''))
+                .join(' ');
+                }</code></pre>
+            <p>More examples can be found on <a class="link" href="https://github.com/valentine909/">GitHUB</a>.</p>
+        </section>
+
+        <section class="info-block">
+            <h2 class="info-sub-title" id="my-projects">My Projects</h2>
+            <div class="project-image"><a href="https://valentine909.github.io/wildlife/"><img alt="wildlife"
+                                                                                               class="thumb"
+                                                                                               src="img/wildlife_thumb_1.jpg"></a>
+            </div>
+        </section>
+
+        <section class="info-block">
+            <h2 class="info-sub-title" id="experience">Experience</h2>
+            <ul>
+                <li>2014 - ... Lead Chemical Engineer in MED-INTERPLAST</li>
+                <li>2005 - 2014 Senior Researcher in Research Institute for Physical Chemical Problems of the Belarusian
+                    State
+                    University
+                </li>
+            </ul>
+        </section>
+
+        <section class="info-block">
+            <h2 class="info-sub-title" id="education">Education</h2>
+            <ul>
+                <li>2002 - 2005 Graduate School of Belarusian State University</li>
+                <li>1997 - 2002 Chemical Department of Belarusian State University</li>
+            </ul>
+        </section>
+
+        <section class="info-block">
+            <h2 class="info-sub-title" id="languages">Languages</h2>
+            <p class="paragraph">English: <strong>C1</strong> (according to <em>EF SET Quick Check</em>)</p>
+            <p class="paragraph">Russian: native</p>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="logo">
+        <a href="https://rs.school/js/">
+            <img alt="RS School" class="footer-img" src="img/rs_school_js.svg">
+        </a>
+    </div>
+
+    <nav class="contacts">
+        <ul class="contacts-list">
+            <li class="single-contact">
+                <a href="mailto:valentine_n@tut.by">
+                    <img alt="Email"
+                         class="footer-img"
+                         src="img/mail_icon.svg">
+                </a>
+            </li>
+            <li class="single-contact">
+                <a href="skype:v.nazaroff">
+                    <img alt="Skype" class="footer-img"
+                         src="img/skype_icon.svg">
+                </a>
+            </li>
+            <li class="single-contact">
+                <a href="https://github.com/valentine909/">
+                    <img alt="GitHUB"
+                         class="footer-img"
+                         src="img/github_icon.svg">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="copyright">
+        <small>© 2021</small>
+    </div>
+</footer>
+
+<!--toggle hamburger menu script-->
+<script>
+    let menu = document.querySelector(".menu")
+    let ham = document.querySelector(".hamburger")
+    let closeIcon = document.querySelector(".close-icon")
+    let menuIcon = document.querySelector(".menu-icon")
+
+    ham.addEventListener("click", toggleMenu)
+
+    function toggleMenu() {
+        if (menu.classList.contains("showMenu")) {
+            menu.classList.remove("showMenu");
+            closeIcon.style.display = "none";
+            menuIcon.style.display = "block";
+        } else {
+            menu.classList.add("showMenu");
+            closeIcon.style.display = "block";
+            menuIcon.style.display = "none";
+        }
+    }
+
+    let menuLinks = document.querySelectorAll(".ham-link")
+
+    menuLinks.forEach(
+        function (menuLink) {
+            menuLink.addEventListener("click", toggleMenu)
+        }
+    )
+    document.getElementsByClassName('close-icon')[0].style.display = 'none'
+</script>
+<!--script to change the background color of highlighted code block to my design color-->
+<script>
+    document.getElementsByTagName("code")[0].style.backgroundColor = "#FBF0F0"
+</script>
+</body>
+</html>
