@@ -58,9 +58,16 @@ main {
 }
 .my-video {
     display: block;
-    border-style:none;
     object-fit: cover;
     margin: 0 auto;
+    border: 0 none;
+}
+.project-image {
+    text-align: center;
+}
+.thumb {
+    width: 100%;
+    max-width: 500px;
 }
 .footer {
     background-color: #B8B0B0;

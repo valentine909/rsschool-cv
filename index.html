@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CV - Valentine Nazarov</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="img/lightbulb_icon.svg" rel="shortcut icon"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css" rel="stylesheet">
@@ -109,9 +109,9 @@
         <section class="info-block">
             <h2 class="info-sub-title" id="self-presentation">Self-presentation</h2>
             <div class="video-container">
-                <iframe class="my-video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen frameborder="0"
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        class="my-video"
                         height="280" src="https://www.youtube.com/embed/xxF5LHRZ0vo"
                         title="YouTube video player"
                         width="500"></iframe>
@@ -131,7 +131,10 @@
 
         <section class="info-block">
             <h2 class="info-sub-title" id="my-projects">My Projects</h2>
-            <a href="https://valentine909.github.io/wildlife/"><img alt="wildlife" src="img/wildlife_thumb_1.jpg"></a>
+            <div class="project-image"><a href="https://valentine909.github.io/wildlife/"><img alt="wildlife"
+                                                                                               class="thumb"
+                                                                                               src="img/wildlife_thumb_1.jpg"></a>
+            </div>
         </section>
 
         <section class="info-block">
