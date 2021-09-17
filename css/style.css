@@ -125,7 +125,7 @@ main {
     justify-content: center;
 }
 .material-icons {
-    font-size: 48px !important;
+    font-size: 4rem !important;
 }
 .menu {
     position: absolute;
@@ -159,13 +159,20 @@ main {
 
 @media only screen and (max-width: 700px){
     body, h2, h4, .menu a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .code {
         font-size: 0.8rem;
+    }
+    .hamburger {
+        width: 3rem;
+        height: 3rem;
+    }
+    .material-icons {
+        font-size: 3rem !important;
     }
     .my-photo {
         max-height:90px;
@@ -179,10 +186,8 @@ main {
     }
     .column-one {
         margin: 1rem 0 1rem;
-    }
-    .column-one {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
     }
     .footer {
         padding: 1rem;
