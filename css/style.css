@@ -12,6 +12,11 @@ header {
     align-items: center;
     justify-content: space-around;
 }
+.its-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .cv-title {
     display: flex;
     flex-direction: column;
@@ -61,6 +66,8 @@ main {
     object-fit: cover;
     margin: 0 auto;
     border: 0 none;
+    width: 100%;
+    max-width: 500px;
 }
 .project-image {
     text-align: center;
@@ -122,7 +129,6 @@ main {
 }
 .menu {
     position: absolute;
-    /*width: 20vh;*/
     background: #FBF0F0;
     color: black;
     transform: translateY(-200%);
@@ -149,4 +155,36 @@ main {
 
 .ham-link:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px){
+    body, h2, h4, .menu a {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    .code {
+        font-size: 0.8rem;
+    }
+    .my-photo {
+        max-height:90px;
+    }
+    main, .footer {
+        flex-direction: column;
+    }
+    .column-one, .column-two {
+        width: 100%;
+        margin: 0;
+    }
+    .column-one {
+        margin: 1rem 0 1rem;
+    }
+    .column-one {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer {
+        padding: 1rem;
+    }
 }
